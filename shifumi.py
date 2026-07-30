@@ -35,7 +35,18 @@ def combat(signe, ordi):
     return resultat
 
 
+signes = {
+    1: "Pierre",
+    2: "Feuille",
+    3: "Ciseaux"
+}
+
+
 signe=joueur()
 ordi=ordinateur()
-print(ordi)
 fin=combat(signe, ordi)
+
+
+print("Vous avez joué :", signes[signe])
+print("L'ordinateur a joué :", signes[ordi])
+print(combat(signe, ordi))
